@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--
+	Noah Lincke
+-->
+<html>
+  <head>
+    <title>Noah Lincke</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper-->
+    <div id="wrapper">
+      <!-- Nav -->
+      <nav id="nav">
+        <a href="#" class="icon fa-home"><span>Home</span></a>
+        <a href="#work" class="icon fa-folder"><span>Work</span></a>
+        <a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
+        <a href="#links" class="icon fa-link"><span>Links</span></a>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Me -->
+        <article id="home" class="panel intro">
+          <header>
+            <h1>Noah Lincke</h1>
+            <p>Software Engineer</p>
+          </header>
+          <a href="#work" class="jumplink pic">
+            <span class="arrow icon fa-chevron-right"
+              ><span>See my work</span></span
+            >
+            <img src="images/me.jpg" alt="Me" />
+          </a>
+        </article>
+
+        <!-- Work -->
+        <article id="work" class="panel">
+          <header>
+            <h2>Work</h2>
+          </header>
+          <p>
+            Here are the personal projects I've created.
+          </p>
+          <section>
+            <div class="row">
+              <div class="col-4 col-6-medium col-12-small">
+                <a href="https://noahlincke.github.io/spoofy" class="image fit"
+                  ><img class="module" src="images/spoofy.jpg" alt="Spoofy"
+                /></a>
+              </div>
+              <div class="col-4 col-6-medium col-12-small">
+                <a class="image fit"
+                  ><img
+                    class="module"
+                    src="images/comingsoonsquare.jpg"
+                    alt="Coming Soon"
+                /></a>
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <!-- Contact -->
+        <article id="contact" class="panel">
+          <header>
+            <h2>Contact Me</h2>
+          </header>
+          <form
+            id="gform"
+            name="gform"
+            target="hidden_iframe"
+            onsubmit="submitted=true;"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSdaQHl8uQAXgWoU5OalsrvDC9P0YX-ZZf-B0oY7XqLFoni6Zg/formResponse?"
+          >
+            <div>
+              <div class="row">
+                <div class="col-6 col-12-medium">
+                  <input
+                    type="text"
+                    name="entry.888297741"
+                    id="entry.888297741"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="col-6 col-12-medium">
+                  <input
+                    type="text"
+                    name="entry.1823872934"
+                    id="entry.1823872934"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    type="text"
+                    name="entry.1803545684"
+                    id="entry.1803545684"
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="col-12">
+                  <textarea
+                    name="entry.1393554401"
+                    id="entry.1393554401"
+                    placeholder="Message"
+                    rows="6"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <input type="submit" value="Send Message" />
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <iframe
+            name="hidden_iframe"
+            id="hidden_iframe"
+            style="display: none;"
+            onload="if(submitted){}"
+          ></iframe>
+
+          <script
+            src="http://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"
+          ></script>
+          <script type="text/javascript">
+            var submitted = false;
+          </script>
+          <script type="text/javascript">
+            $("#gform").on("submit", function(e) {
+              $("#gform *").fadeOut(2000);
+              $("#gform").prepend("Your message has been received. Thanks!");
+            });
+          </script>
+        </article>
+
+        <article id="links" class="panel">
+          <header>
+            <h2>Links</h2>
+          </header>
+          <p>
+            Links to my professional portfolios/resumes.
+          </p>
+          <section>
+            <a href="#" class="icon fa-github icolink"><span> Github</span></a>
+            <br />
+            <br />
+            <a
+              href="https://linkedin.com/in/noahlincke"
+              class="icon fa-linkedin icolink"
+              style="display: inline-block"
+              ><span> LinkedIn</span></a
+            >
+            <br />
+            <br />
+            <a
+              href="http://noah.lincke.org/resume.pdf"
+              class="icon fa-file icolink"
+              ><span> Resume</span></a
+            >
+          </section>
+        </article>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+        <ul class="copyright">
+          <li>&copy; 2019 Noah Lincke.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
