@@ -2218,4 +2218,8 @@ input, select, textarea {
 		rgb(94, 151, 184), 
 		rgb(7, 30, 235)
 	  ) 1 100%; */
-  }
+}
+
+div.logos > img {
+	max-width: 2em;
+}
