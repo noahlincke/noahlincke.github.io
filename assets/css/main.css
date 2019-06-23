@@ -2170,8 +2170,8 @@ input, select, textarea {
 
 
 .icolink {
-	background-color: #DAA290;
-	box-shadow: 0 5px 0 #A0796C;
+	background-color: rgb(97, 219, 228);
+	box-shadow: 0 5px 0 rgb(41, 126, 141);
 	padding: 1em 1.5em;
 	position: relative;
 	text-decoration: none;
@@ -2190,7 +2190,7 @@ input, select, textarea {
 
 
 .icolink:hover {
-	background-color: #AF757C;
+	background-color: rgb(33, 87, 88);
 }
 
 .icolink:active {
@@ -2199,15 +2199,23 @@ input, select, textarea {
 } 
 
 .module {
-	max-width: 250px;
+	/* max-width: 128px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, red, purple);
+  padding: 2px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	max-width: 256px;
 	padding: 1rem;
 	color: white;
-	border-width: 5px;
+	/* border-width: 2px;
 	border-style: solid;
 	border-image: 
 	  linear-gradient(
 		to bottom, 
-		#8F617B, 
-		rgba(0, 0, 0, 0)
-	  ) 1 100%;
+		rgb(94, 151, 184), 
+		rgb(7, 30, 235)
+	  ) 1 100%; */
   }
