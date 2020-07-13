@@ -11,13 +11,10 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <script src="/assets/js/customForm.js"></script>
   </head>
   <body class="is-preload">
     <!-- Wrapper-->
@@ -25,8 +22,6 @@
       <!-- Nav -->
       <nav id="nav">
         <a href="#" class="icon fa-home"><span>Home</span></a>
-        <a href="#work" class="icon fa-folder"><span>Work</span></a>
-        <a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
         <a href="#links" class="icon fa-link"><span>Links</span></a>
         <a href="#about" class="icon fa-info-circle"><span>About</span></a>
       </nav>
@@ -39,7 +34,7 @@
             <h1>Noah Lincke</h1>
             <p>CS @ University of Michigan</p>
           </header>
-          <a href="#work" class="jumplink pic">
+          <a href="#about" class="jumplink pic">
             <span class="arrow icon fa-chevron-right"
               ><span>See my work</span></span
             >
@@ -48,155 +43,22 @@
         </article>
 
         <!-- Work -->
-        <article id="work" class="panel">
-          <header>
-            <h2>Work</h2>
-          </header>
-          <p>
-            Here are the personal projects I've created.
-          </p>
-          <section>
-            <div class="row">
-              <div class="col-4 col-6-medium col-12-small">
-                <a href="https://spoofy.herokuapp.com" class="image fit"
-                  ><img
-                    class="module"
-                    src="images/spoofyico.jpg"
-                    alt="Spoofy"
-                    title="Spoofy"
-                /></a>
-              </div>
-              <div class="col-4 col-6-medium col-12-small">
-                <a href="https://ghfind.netlify.com/" class="image fit"
-                  ><img
-                    class="module"
-                    src="images/ghfind.jpg"
-                    alt="Github Finder"
-                    title="Github Finder"
-                /></a>
-              </div>
-              <div class="col-4 col-6-medium col-12-small">
-                <a href="https://contactkeep.herokuapp.com/" class="image fit"
-                  ><img
-                    class="module"
-                    src="images/contactkeep.jpg"
-                    alt="Contact Keeper"
-                    title="Contact Keeper"
-                /></a>
-              </div>
-              <div class="col-4 col-6-medium col-12-small">
-                <a class="image fit"
-                  ><img
-                    class="module"
-                    src="images/comingsoonico.jpg"
-                    alt="Coming Soon"
-                /></a>
-              </div>
-            </div>
-          </section>
-        </article>
-
-        <!-- Contact -->
-        <article id="contact" class="panel">
-          <header>
-            <h2>Contact Me</h2>
-          </header>
-          <form
-            id="gform"
-            name="gform"
-            target="hidden_iframe"
-            onsubmit="submitted=true;"
-            action="https://docs.google.com/forms/d/e/1FAIpQLSdaQHl8uQAXgWoU5OalsrvDC9P0YX-ZZf-B0oY7XqLFoni6Zg/formResponse?"
-          >
-            <div>
-              <div class="row">
-                <div class="col-6 col-12-medium">
-                  <input
-                    type="text"
-                    name="entry.888297741"
-                    id="entry.888297741"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="col-6 col-12-medium">
-                  <input
-                    type="text"
-                    name="entry.1823872934"
-                    id="entry.1823872934"
-                    placeholder="Email"
-                  />
-                </div>
-                <div class="col-12">
-                  <input
-                    type="text"
-                    name="entry.1803545684"
-                    id="entry.1803545684"
-                    placeholder="Subject"
-                  />
-                </div>
-                <div class="col-12">
-                  <textarea
-                    name="entry.1393554401"
-                    id="entry.1393554401"
-                    placeholder="Message"
-                    rows="6"
-                  ></textarea>
-                </div>
-                <div class="col-12">
-                  <input type="submit" value="Send Message" />
-                </div>
-              </div>
-            </div>
-          </form>
-
-          <iframe
-            name="hidden_iframe"
-            id="hidden_iframe"
-            style="display: none;"
-            onload="if(submitted){}"
-          ></iframe>
-
-          <script
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"
-          ></script>
-          <script type="text/javascript">
-            var submitted = false;
-          </script>
-          <script type="text/javascript">
-            $("#gform").on("submit", function(e) {
-              $("#gform *").fadeOut(2000);
-              $("#gform").prepend("Your message has been received. Thanks!");
-            });
-          </script>
-        </article>
-
-        <!-- Links -->
         <article id="links" class="panel">
           <header>
-            <h2>Links</h2>
+            <h2>Relevant Portfolios/Information</h2>
           </header>
-          <p>
-            Links to my professional portfolios/resumes.
-          </p>
           <section>
-            <a
-              href="https://github.com/noahlincke"
-              class="icon fa-github icolink"
-              ><span> Github</span></a
+            <i class="fa fa-file" aria-hidden="true"></i>
+            <a href="http://noah.lincke.org/resume.pdf">Resume (PDF)</a>
+            <br /><br />
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <a href="https://github.com/noahlincke"
+              >https://github.com/noahlincke</a
             >
-
-            <a
-              href="https://linkedin.com/in/noahlincke"
-              class="icon fa-linkedin icolink"
-              ><span> LinkedIn</span></a
-            >
-
-            <a
-              href="http://noah.lincke.org/resume.pdf"
-              class="icon fa-file icolink"
-              ><span> Resume</span></a
+            <br /><br />
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <a href="https://linkedin.com/in/noahlincke"
+              >https://linkedin.com/in/noahlincke</a
             >
           </section>
         </article>
@@ -209,69 +71,27 @@
           <p>
             Hi! My name is Noah. I am currently studying Computer Science at the
             University of Michigan in Ann Arbor. I enjoy a wide variety of
-            topics within CS, from web development to desktop software
-            development to statistical data analysis. I have experience creating
-            applications in the following languages and frameworks:
+            topics within CS including machine learning, data analysis, and
+            computer networking. I primarily work in Python, C++, and Java.
           </p>
-
-          <div class="logos">
-            <img
-              src="./images/html5/html5-original-wordmark.svg"
-              alt="HTML5"
-              title="HTML5"
-            />
-            <img
-              src="./images/css3/css3-original-wordmark.svg"
-              alt="CSS3"
-              title="CSS3"
-            />
-            <img
-              src="./images/javascript/javascript-original.svg"
-              alt="JS"
-              title="JS"
-            />
-            <img
-              src="./images/mongodb/mongodb-original-wordmark.svg"
-              alt="MongoDB"
-              title="MongoDB"
-            />
-            <img
-              src="./images/express/express-original-wordmark.svg"
-              alt="ExpressJS"
-              title="ExpressJS"
-            />
-            <img
-              src="./images/react/react-original-wordmark.svg"
-              alt="ReactJS"
-              title="ReactJS"
-            />
-            <img
-              src="./images/nodejs/nodejs-original-wordmark.svg"
-              alt="NodeJS"
-              title="NodeJS"
-            />
-            <img
-              src="./images/redux/redux-original.svg"
-              alt="Redux"
-              title="Redux"
-            />
-            <img
-              src="./images/python/python-original.svg"
-              alt="Python"
-              title="Python"
-            />
-            <br />
-            <br />
-            <img
-              src="./images/cplusplus/cplusplus-original.svg"
-              alt="C++"
-              title="C++"
-            />
-            <img
-              src="./images/java/java-original-wordmark.svg"
-              alt="Java"
-              title="Java"
-            />
+          <div style="text-align: center;">
+            <div class="logos">
+              <img
+                src="./images/python/python-original.svg"
+                alt="Python"
+                title="Python"
+              />
+              <img
+                src="./images/cplusplus/cplusplus-original.svg"
+                alt="C++"
+                title="C++"
+              />
+              <img
+                src="./images/java/java-original-wordmark.svg"
+                alt="Java"
+                title="Java"
+              />
+            </div>
           </div>
         </article>
       </div>
