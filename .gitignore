@@ -1,2 +1,5 @@
 .vscode
 .DS_Store
+
+# Deploy script lives in the private dotfiles repo (~/bin/deploy-noahlincke-web)
+deploy.sh
